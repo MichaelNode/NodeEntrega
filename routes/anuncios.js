@@ -114,10 +114,9 @@ router.get('/:id', async (req, res, next) => {
 });
 
 
-router.post('/', [ query('precio').isNumeric().withMessage('debe ser numérico')], async (req, res , next) => {
+router.post('/', async (req, res , next) => {
 	try {
 		const datosAnuncios = req.body;
-		validationResult(req).throw();
 		const anuncio = new Anuncios(datosAnuncios);
 		const anunciosSave = await anuncio.save();
 
