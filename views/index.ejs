@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div style="background-color: #337ab7;"> 
+      <br>
+      <h1>ANUNCIOS</h1>
+      <br>
+      <form method="get">
+          <div class="row">
+            <div class=" col-md-3 col-xl-3 col-xs-2 "></div>
+            <div class=" col-md-4 col-xl-4 col-xs-7">
+              <input type="text" id="search" name="search" class="form-control" placeholder="EJ: Iphone">
+            </div>
+            <div class="col-md-2 col-xl-2 col-xs-2">
+              <button type="submit" class="btn btn-info">Buscar</button>
+            </div>
+          </div>
+      </form>
+      <div class="background">
+        <% for (var i = 0; i < anuncios.length; i++) { %>
+        <div class="container col-md-3 col-xs-6 col-xl-12 ">
+          <div class="panel pricing-table " >
+            <div class="pricing-plan">
+              <img src="<%= anuncios[i].foto %>"  alt="" style="height: 188px;width:187px;" class="pricing-img">
+              <h2 class="pricing-header"><%= anuncios[i].nombre %></h2>
+              <ul class="pricing-features">
+                <% if(anuncios[i].venta == true){ %>
+                  <li class="pricing-features-item"> Tipo: Venta </li>
+                <% } else{ %>
+                    <li class="pricing-features-item"> Tipo: Búsqueda </li>
+                <% } %>
+                  <li class="pricing-features-item"> Tags: <%= anuncios[i].tags %></li>
+              </ul>
+                <span class="pricing-price">$ <%= anuncios[i].precio %></span>  
+            </div>
+          </div>
+        </div>    
+        <% } %>
+      </div>
+    </div>
+    <div class="container"></div>
+      <div class="text-center">
+        <% if (pages > 0) { %>
+          <ul class="pagination text-center">
+            <% if (current == 1) { %>
+              <li class="disabled"><a>Primera</a></li>
+            <% } else { %>
+              <li><a href="/apiAnuncio/main/1">Primera</a></li>
+            <% } %>
+            <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+            <% if (i !== 1) { %>
+                <li class="disabled"><a>...</a></li>
+            <% } %>
+            <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+              <% if (i == current) { %>
+                <li class="active"><a><%= i %></a></li>
+              <% } else { %>
+                <li><a href="/apiAnuncio/main/<%= i %>"><%= i %></a></li>
+              <% } %>
+              <% if (i == Number(current) + 4 && i < pages) { %>
+                <li class="disabled"><a>...</a></li>
+              <% } %>
+            <% } %>
+              <% if (current == pages) { %>
+                <li class="disabled"><a>Ultima</a></li>
+              <% } else { %>
+                <li><a href="/apiAnuncio/main/<%= pages %>">Ultima</a></li>
+              <% } %>
+            </ul>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+{
+    "anuncios": [
+        {
+            "nombre": "Ipad 2G",
+            "venta": true,
+            "precio": 20.15,
+            "foto": "/images/ipad.jpg",
+            "tags": [ "lifestyle", "mobile"]
+        },
+        {
+            "nombre": "HP 15-la",
+            "venta": true,
+            "precio": 100.15,
+            "foto": "/images/hp.jpg",
+            "tags": [ "lifestyle", "work"]
+        },
+        {
+            "nombre": "Bicicleta",
+            "venta": true,
+            "precio": 230.15,
+            "foto": "/images/bicicleta.jpg",
+            "tags": [ "lifestyle"]
+        },
+        {
+            "nombre": "Moto",
+            "venta": true,
+            "precio": 230.15,
+            "foto": "/images/moto.jpg",
+            "tags": [ "lifestyle", "motor"]
+        },
+        {
+            "nombre": "iPhone 3GS",
+            "venta": false,
+            "precio": 50.00,
+            "foto": "/images/iphone3g.jpg",
+            "tags": [ "lifestyle", "mobile"]
+        },
+        {
+            "nombre": "iPhone 4S",
+            "venta": false,
+            "precio": 60.00,
+            "foto": "/images/iphone4.jpg",
+            "tags": [ "lifestyle", "mobile","work"]
+            }
+    ]
+}
