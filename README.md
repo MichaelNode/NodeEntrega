@@ -28,6 +28,20 @@ ej: <http://localhost:3000/apiAnuncio?tags=mobile&venta=false&nombre=ip&precio=5
 ej : <http://localhost:3000/apiAnuncio/main?tags=mobile&venta=false&nombre=ip&precio=50-&limit=2&sort=precio>
 
 
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/MichaelNode/NodeEntrega/master/contenido/nodepractica.jpg">
+</p>
+
+
+## Crear anuncio
+
+Para crear un anuncio se debe realizar un POST a la ruta <http://localhost:3000/apiAnuncio> y enviando lo siguientes parámetro que se muestra en la siguiente imagen
+
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/MichaelNode/NodeEntrega/master/contenido/GuardarAnuncio.jpg">
+</p>
+
+
 ## Proceso de instalación 
 
 ## Instalación
@@ -64,7 +78,5 @@ Para ejecutar la aplicación en desarrollo usa:
 npm run dev
 ```
 
-<p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
-</p>
+
 
