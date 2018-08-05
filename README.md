@@ -63,3 +63,8 @@ Para ejecutar la aplicación en desarrollo usa:
 ```shell
 npm run dev
 ```
+
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
+
