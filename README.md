@@ -29,7 +29,7 @@ ej : <http://localhost:3000/apiAnuncio/main?tags=mobile&venta=false&nombre=ip&pr
 
 
 <p align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/MichaelNode/NodeEntrega/master/contenido/nodepractica.jpg">
+  <img width="660" height="500" src="https://raw.githubusercontent.com/MichaelNode/NodeEntrega/master/contenido/nodepractica.jpg">
 </p>
 
 
@@ -38,7 +38,7 @@ ej : <http://localhost:3000/apiAnuncio/main?tags=mobile&venta=false&nombre=ip&pr
 Para crear un anuncio se debe realizar un POST a la ruta <http://localhost:3000/apiAnuncio> y enviando lo siguientes parámetro que se muestra en la siguiente imagen
 
 <p align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/MichaelNode/NodeEntrega/master/contenido/GuardarAnuncio.jpg">
+  <img width="660" height="500" src="https://raw.githubusercontent.com/MichaelNode/NodeEntrega/master/contenido/GuardarAnuncio.jpg">
 </p>
 
 
